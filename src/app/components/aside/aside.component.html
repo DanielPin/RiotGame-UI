@@ -1,3 +1,12 @@
-<div class="row" (click)="toggleState()" [@asideState]="asideState" style="background-color:#151819; width:30px; height:1000px">
-000000000000000000000oi
+<div
+  class="row aside-menu"
+  [@asideState]="asideState">
+  <div  style="margin: 1.2rem 0 0 1.2rem; ">
+    <a>
+      <fa-icon class="itens" [icon]="faFaceSmileBeam"></fa-icon>
+      <div [@asideChildrenState]="asideChildrenState">
+
+      </div>
+    </a>
+  </div>
 </div>

@@ -109,5 +109,7 @@
       }
     }
   },
-  "defaultProject": "RiotGame-UI"
+  "cli": {
+    "analytics": "5e6a083e-af21-4cb6-99d3-49eaa239bf2e"
+  }
 }
