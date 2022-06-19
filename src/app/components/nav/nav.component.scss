@@ -1,0 +1,51 @@
+.navbar{
+  background-color: #151819!Important;
+}
+.drop-d-menu {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover{
+    background-color: #ED145B;
+    color: #FFFFFF;
+  }
+
+  width: 8rem;
+  border-right: 0px solid;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.options-red{
+  background-color: red;
+  color: #FFFFFF;
+}
+.options-green{
+  background-color: green;
+  color: #FFFFFF;
+}
+
+.input-menu {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  border-radius: 0;
+  margin: 0!important;
+}
+
+.btn{
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  border-radius: 0 5px 5px 0;
+  margin: 0!important;
+  background-color: #ED145B;
+}
+
+h4{
+  color: #FFFFFF;
+}
+
+
