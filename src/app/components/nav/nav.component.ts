@@ -18,6 +18,7 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {}
 
   public toggleState(): void {
+    console.log(this.asideState);
     this.asideState = this.asideState === 'open' ? 'closed' : 'open';
     this._mainService.hasStateAsideChange.next(this.asideState);
   }

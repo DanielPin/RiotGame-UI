@@ -1,11 +1,18 @@
-.aside-menu{
+.itens {
+  color: #ffffff;
+}
+
+.aside-fixed {
   background-color: #151819;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 100vh;
+  max-width: 5%;
+  border: 1px solid #32393b;
+  z-index: 2;
 }
-.itens{
-  color: #FFFFFF;
+
+.aside-flex {
+  max-width: 13%;
+  background-color: #151819;
+
 }
-
-
-

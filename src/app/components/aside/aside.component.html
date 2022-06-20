@@ -1,12 +1,13 @@
-<div
-  class="row aside-menu"
-  [@asideState]="asideState">
-  <div  style="margin: 1.2rem 0 0 1.2rem; ">
-    <a>
-      <fa-icon class="itens" [icon]="faFaceSmileBeam"></fa-icon>
-      <div [@asideChildrenState]="asideChildrenState">
+<div class="row">
+  <div class="col aside-fixed">
 
-      </div>
-    </a>
+      <a>
+        <fa-icon class="itens" [icon]="faFaceSmileBeam"></fa-icon>
+      </a>
+
+  </div>
+
+  <div [@asideState]="asideState" class="aside-flex p-0">
+       <a class="itens" [@display]="asideState">Campeões</a>
   </div>
 </div>

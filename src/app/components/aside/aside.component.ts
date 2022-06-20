@@ -14,38 +14,30 @@ import { MainService } from '../main.service';
   templateUrl: './aside.component.html',
   styleUrls: ['./aside.component.scss'],
   animations: [
-    trigger('asideState', [
-      state('open', style({ width: '15%', zIndex: 2 })),
-      state('closed', style({ width: '5%', zIndex: 2 })),
-      transition('open => closed', animate('0.5s ease-in')),
-      transition('closed => open', animate('0.5s ease-out')),
+    trigger('display', [
+      state('open', style({ display: 'block' })),
+      state('closed', style({ display: 'none' })),
+      transition('open => closed', animate('0.0s')),
+      transition('closed => open', animate('0.0s')),
     ]),
-    trigger('asideChildrenState', [
-      state('open', style({ width: '10%', zIndex: 2 })),
-      state('closed', style({ width: '0%', zIndex: 2  })),
+    trigger('asideState', [
+      state('open', style({ width: '13%', zIndex: 0 })),
+      state('closed', style({ width: '0', zIndex: 0 })),
       transition('open => closed', animate('0.5s ease-in')),
       transition('closed => open', animate('0.5s ease-out')),
     ]),
   ],
-
 })
 export class AsideComponent implements OnInit {
-
   public faFaceSmileBeam = faFaceSmileBeam;
 
   public asideState: string = 'closed';
-  public asideChildrenState: string = 'closed';
 
-  constructor(
-    private _mainService: MainService
-  ) {}
+  constructor(private _mainService: MainService) {}
 
   ngOnInit(): void {
-    this._mainService.hasStateAsideChange.subscribe((state)=>{
+    this._mainService.hasStateAsideChange.subscribe((state) => {
       this.asideState = state;
-      this.asideChildrenState = state;
     });
   }
-
-
 }
